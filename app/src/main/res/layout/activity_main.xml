@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_size_16"
+        android:background="@color/yellow"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/say_hello_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/say_hello_string" />
+
+        <TextView
+            android:id="@+id/counter_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="@dimen/sp_size_180"
+            android:textStyle="bold"
+            tools:text="0" />
+
+        <Button
+            android:id="@+id/count_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/count_string" />
+
+    </LinearLayout>
+
+</FrameLayout>
